@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spiro Spats Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+            <header>
+                <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just a Drink <br> It's <span>Spiro Spats</span></h2>
+                    <p>
+                    Spiro Spathis is a carbonated soft drink manufactured by Spiro Spathis. 
+                    Which was originally created and developed in 1920 by a Greek man named 
+                    Spiro Spatis, who was born in 1882 AD and then came to Egypt at the age 
+                    of 15 years during the monarchy period and was presented with the same 
+                    name, which reappeared again in the spotlight after campaigns to boycott 
+                    foreign products and encourage Egyptian products on social media sites. 
+                    Social Affairs in the wake of the Al-Aqsa Flood.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="images/thumb1.png" class="spiro_spats" alt="">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="images/img1.png" onclick="imgSlider('images/thumb1.png');changeCircleColor('#017143')" alt=""></li>
+                <li><img src="images/img2.png" onclick="imgSlider('images/thumb2.png');changeCircleColor('#eb7495')" alt=""></li>
+                <li><img src="images/img3.png" onclick="imgSlider('images/thumb3.png');changeCircleColor('#d752b1')" alt=""></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="images/facebook.png"></a></li>
+                <li><a href="#"><img src="images/twitter.png"></a></li>
+                <li><a href="#"><img src="images/instagram.png"></a></li>
+            </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything)
+        {
+            document.querySelector('.spiro_spats').src = anything;
+        }
+        function changeCircleColor(color)
+        {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
